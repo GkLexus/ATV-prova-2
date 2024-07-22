@@ -1,0 +1,17 @@
+# Pergunta ao usuário a velocidade do carro
+velocidade = float(input("Digite a velocidade do veiculo: "))
+
+# Define o limite de velocidade
+LMTV = 80
+VLRM = 20
+
+# Verifica se a velocidade ultrapassa o limite
+if velocidade > LMTV:
+    # Calcula o valor da multa
+    exvel = velocidade - LMTV
+    VLRM = exvel * VLRM
+    
+    # Exibe a mensagem de multa
+    print(f"Você foi multado! O valor da multa é R${VLRM:.2f}.")
+else:
+    print("Você Não ultrapassou o limite de velocidade.")
